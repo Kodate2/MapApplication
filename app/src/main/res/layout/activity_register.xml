@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="jp.android.myapp.mapapplication.RegisterActivity">
+
+    <TextView android:text="住所を入力" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewRegister"
+        android:textSize="30sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editName"
+        android:layout_below="@+id/viewRegister"
+        android:layout_alignEnd="@+id/editAddress"
+        android:layout_toEndOf="@+id/viewName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editAddress"
+        android:layout_below="@+id/editName"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/viewAdd" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="名前"
+        android:id="@+id/viewName"
+        android:layout_alignBottom="@+id/editName"
+        android:layout_alignParentStart="true"
+        android:textIsSelectable="true"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="住所"
+        android:id="@+id/viewAdd"
+        android:layout_alignBottom="@+id/editAddress"
+        android:layout_alignParentStart="true"
+        android:textSize="25dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editOpening"
+        android:layout_below="@+id/editAddress"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/viewOpening" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="営業時間"
+        android:id="@+id/viewOpening"
+        android:layout_below="@+id/editAddress"
+        android:layout_alignParentStart="true"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="駐車場"
+        android:id="@+id/viewParking"
+        android:layout_below="@+id/editOpening"
+        android:layout_alignParentStart="true"
+        android:textSize="25dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editParking"
+        android:layout_below="@+id/editOpening"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/viewParking" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登録"
+        android:id="@+id/regButton"
+        android:layout_below="@+id/editParking"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

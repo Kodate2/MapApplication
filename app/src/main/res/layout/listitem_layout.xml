@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/regName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/regAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/regName"
+            android:layout_alignLeft="@id/regName"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/regOpening"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/regAddress"
+            android:layout_alignLeft="@id/regAddress"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/regParking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/regOpening"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/regDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/regParking"
+            android:layout_alignLeft="@id/regOpening"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
